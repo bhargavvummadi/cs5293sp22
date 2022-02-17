@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 black = "*"
+ipython = "*"
 
 [dev-packages]
 

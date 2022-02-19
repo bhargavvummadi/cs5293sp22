@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 setup{
-	name='tweetercounter',
+	name='twittercounter',
 	version='1.0',
 	author='bhargav',
 	author_email='bhargav.vummadi@ou.edu',

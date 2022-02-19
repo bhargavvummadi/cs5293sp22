@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 black = "*"
 ipython = "*"
+autopep8 = "*"
+pytest = "*"
 
 [dev-packages]
 

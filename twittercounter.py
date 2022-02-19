@@ -1,5 +1,7 @@
 import argparse
+import tweets
 
+from tweets import Tweet
 
 def main(term):
     """This has sample content"""
@@ -7,12 +9,28 @@ def main(term):
     
 
 def counttweets(filename):
-	"""Count all the unique tweets in a file."""
-	return -1
+    """Count all the unique tweets in a file."""
+    co=0
+    with open(filename) as file:
+        for line in file:
+            co+=1
+    return co    
 
-def searchterms(filename,terms=None)
-	"""Search the file for a list of terms."""
-	return list()
+
+
+
+
+def searchterms(filename,terms=None):
+    """Search the file for a list of terms"""
+    if type(terms) != list:
+        terms=list(terms)
+    tweets=[]
+    with open(filename) as file:
+        for line in file:
+            tweet = Tweet(line)
+            if terms[0] in tweet:
+                tweets.append(tweet)
+    return tweets
 
 
 
